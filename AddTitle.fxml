@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="249.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iPublisher.AddTitleController">
+   <children>
+      <Label layoutX="175.0" layoutY="24.0" text="Add Title">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="83.0" text="ID" />
+      <Label layoutX="21.0" layoutY="112.0" text="Name" />
+      <Label layoutX="19.0" layoutY="146.0" text="Author" />
+      <ComboBox fx:id="authorBox" layoutX="129.0" layoutY="142.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="idField" layoutX="129.0" layoutY="79.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="nameField" layoutX="129.0" layoutY="108.0" prefHeight="25.0" prefWidth="217.0" />
+      <Button fx:id="cancelBtn" layoutX="252.0" layoutY="196.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Button fx:id="saveBtn" layoutX="346.0" layoutY="196.0" mnemonicParsing="false" onAction="#save" text="Save" />
+   </children>
+</AnchorPane>
